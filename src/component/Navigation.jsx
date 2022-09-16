@@ -10,9 +10,11 @@ const Navigation = () => {
                 <Navbar.Brand href="/home">React-Bootstrap</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="m-auto">
                         <Nav.Link href="/home">Home</Nav.Link>
+                        <Nav.Link href="/cars">Cars</Nav.Link>
                         <Nav.Link href="/about">About</Nav.Link>
+
                         {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">
@@ -25,6 +27,12 @@ const Navigation = () => {
                             </NavDropdown.Item>
                         </NavDropdown> */}
                     </Nav>
+                    <Nav>
+            <Nav.Link className="me-3 bg-success text-light rounded" href="/register">Get Started</Nav.Link>
+            <Nav.Link className="bg-info text-light rounded" eventKey={2} href="/login">
+              Login
+            </Nav.Link>
+          </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>

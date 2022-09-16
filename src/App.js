@@ -8,6 +8,7 @@ import Layout from "./layout/Layout";
 //pages
 import Home from "./pages/Home";
 import About from "./pages/About"
+import CarListing from "./pages/CarListing";
 import PageNotFound from "./pages/PageNotFound";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/home" element={<Home />} exact />
+        <Route path="/cars" element={<CarListing />} exact />
         <Route path="/" element={<Navigate to="/home"/> } />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<PageNotFound />} />
